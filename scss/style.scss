@@ -1,0 +1,234 @@
+@import "../scss/desktop";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.page-header{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  h1{
+    font-family: "Dancing Script", sans-serif;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 2.3rem;
+    margin-top: 5px;
+  }
+}
+
+.page-menu{
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  text-align: center;
+  transition: all 200ms ease-out;
+  opacity: 0;
+  li{
+    width: 100vw;
+    background-color: rgba(22, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+  }
+  li:hover{
+    background-color: rgba(22, 0, 0, 0.3);
+  }
+  a{
+    color: #fff;
+  }
+}
+
+/*========================styles when nav menu is opened on mobile==========*/
+.page-header.nav-opened{
+  background-color: rgba(22, 0, 0, 0.2);
+  h1{
+    color: #fff;
+  }
+  .bar1, .bar2, .bar3{
+    background-color: #fff;
+  }
+  .page-menu{
+    opacity: 1;
+  }
+}
+
+/*===========================================================================*/
+
+/*----------- Styles for hamburger menu that change to cross after click -------- */
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.page-main{
+  header{
+    background: url("../images/animal-collar-dog-8700.jpg");
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    min-height: 100vh;
+    color: #fff;
+    text-shadow: 0 2px 3px #000;
+    h2{
+      padding-top: 1px;
+      width: 100vw;
+    }
+  }
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.page-info{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  div{
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  i{
+    font-size: 4rem;
+    padding: 20px;
+  }
+}
+
+.page-about{
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  .pug{
+    background-image: url("../images/adorable-animal-breed-1289557.jpg");
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    background-position: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  article{
+    padding: 20px;
+    h4{
+      font-family: "Dancing Script", sans-serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.parallax{
+  background: url("../images/beautiful-conifers-dog-247522.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  opacity: 0.5;
+}
+
+.page-features{
+  background-color: #222;
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+  color: #fff;
+  h3{
+    padding-top: 20px;
+  }
+  p{
+    padding: 20px;
+  }
+  button{
+    cursor: pointer;
+    border: 1px solid #430804;
+    width: 20vw;
+    margin: 0 auto;
+    background-color: #540915;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+  }
+  button:hover{
+    background-color: #430804;
+  }
+}
+
+footer{
+  text-align: center;
+  li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #430804;
+    background-color: #540915;
+  }
+  li:first-child{
+    background-color: #430804;
+    color: #fff;
+    cursor: default;
+  }
+  a{
+    color: #fff;
+  }
+  li:not(:first-child):hover{
+    font-weight: bold;
+  }
+  div{
+    background-color: #222222;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    i{
+      padding: 5px;
+    }
+  }
+}
+
+
+

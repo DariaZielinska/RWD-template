@@ -1,0 +1,8 @@
+@media (min-width: 800px) {
+  /* line 2, scss/_desktop.scss */
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlc2t0b3AuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsOEJBQThCO0VBQzlCO0lBQ0UsYUFBYTtFQUNmO0FBQ0YiLCJmaWxlIjoiZGVza3RvcC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAbWVkaWEgKG1pbi13aWR0aDogODAwcHgpIHtcbiAgLyogbGluZSAyLCBzY3NzL2Rlc2t0b3Auc2NzcyAqL1xuICAuaGFtYnVyZ2VyLW1lbnUge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cbiJdfQ== */
