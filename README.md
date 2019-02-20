@@ -4,7 +4,7 @@
 This is really small project made to practise Responsive Web Design.
 
 ## Available on:
-https://dariazielinska.github.io/RWD_template/
+https://dariazielinska.github.io/RWD-template/
 
 ## Installation:
 1. `git clone https://github.com/DariaZielinska/RWD_template.git`
